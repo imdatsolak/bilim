@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A598" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSCollectionViewItem">
+            <connections>
+                <outlet property="view" destination="rJU-jR-tdj" id="fBV-Wo-SEZ"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <userDefaultsController representsSharedInstance="YES" id="ZBa-go-CuU"/>
+        <box autoresizesSubviews="NO" transparent="YES" title="IconView" boxType="custom" borderType="none" titlePosition="noTitle" id="rJU-jR-tdj" customClass="ISOIconViewBox">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="269"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijj-Pi-HuD">
+                        <rect key="frame" x="9" y="23" width="202" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="PEh-xg-IcO">
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="representedObject.BVTitle" id="aiQ-Bg-mkh"/>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ew-pF-cpL">
+                        <rect key="frame" x="9" y="3" width="202" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="pUK-d8-hKI">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="representedObject.BVAuthor" id="xYu-lb-fxb"/>
+                        </connections>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-gH-YFR" customClass="ISOBookCoverView">
+                        <rect key="frame" x="34" y="48" width="150" height="205"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="bottom" imageScaling="proportionallyDown" id="LyA-oD-wfq"/>
+                        <connections>
+                            <binding destination="-2" name="value" keyPath="representedObject" id="RDD-TR-P5Q"/>
+                        </connections>
+                    </imageView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4BA-gP-1se">
+                        <rect key="frame" x="185" y="48" width="26" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="bevel" bezelStyle="circular" image="NSInfo" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="2eR-q5-rqd">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showBookDetails:" target="hk7-gH-YFR" id="yD1-sn-LL8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="deviceWhite"/>
+            <connections>
+                <binding destination="-2" name="transparent" keyPath="selected" id="fQP-UP-e19">
+                    <dictionary key="options">
+                        <string key="NSValueTransformerName">NSNegateBoolean</string>
+                    </dictionary>
+                </binding>
+                <outlet property="imageView" destination="hk7-gH-YFR" id="JAc-cD-usv"/>
+            </connections>
+        </box>
+    </objects>
+    <resources>
+        <image name="NSInfo" width="32" height="32"/>
+    </resources>
+</document>

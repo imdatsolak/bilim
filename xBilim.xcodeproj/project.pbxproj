@@ -1,0 +1,1374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720C75411819637500255D94 /* ISOLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C75401819637500255D94 /* ISOLibraryViewController.m */; };
+		720C754718196D9F00255D94 /* ISOMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720C754618196D9F00255D94 /* ISOMasterViewController.m */; };
+		720C754A18197BAC00255D94 /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720C754818197BAC00255D94 /* LibraryView.xib */; };
+		720C755018197C7900255D94 /* BookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 720C754E18197C7900255D94 /* BookView.xib */; };
+		721AF0B1182BD96300BCAF10 /* copycitation.png in Resources */ = {isa = PBXBuildFile; fileRef = 721AF0B0182BD96300BCAF10 /* copycitation.png */; };
+		721AF0B3182BE33C00BCAF10 /* paperbookimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 721AF0B2182BE33C00BCAF10 /* paperbookimage.png */; };
+		721AF0FC182D353D00BCAF10 /* ISOPaperBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721AF0FB182D353D00BCAF10 /* ISOPaperBookController.m */; };
+		721AF102182D6D4500BCAF10 /* addchapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 721AF100182D6D4500BCAF10 /* addchapter.png */; };
+		721AF103182D6D4500BCAF10 /* removechapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 721AF101182D6D4500BCAF10 /* removechapter.png */; };
+		721AF104182D70DD00BCAF10 /* PaperBookEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF106182D70DD00BCAF10 /* PaperBookEditor.xib */; };
+		721AF107182D70F200BCAF10 /* ISOSingleNoteEditController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF109182D70F200BCAF10 /* ISOSingleNoteEditController.xib */; };
+		721AF10A182D70F800BCAF10 /* SNECPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF10C182D70F800BCAF10 /* SNECPopover.xib */; };
+		721AF10D182D70FE00BCAF10 /* ISONotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF10F182D70FE00BCAF10 /* ISONotesViewController.xib */; };
+		721AF110182D722200BCAF10 /* CLVPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF112182D722200BCAF10 /* CLVPopover.xib */; };
+		721AF113182D722A00BCAF10 /* BTVPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF115182D722A00BCAF10 /* BTVPopover.xib */; };
+		721AF116182D723500BCAF10 /* ISOBookThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF118182D723500BCAF10 /* ISOBookThemeViewController.xib */; };
+		721AF119182D723E00BCAF10 /* ISONotesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF11B182D723E00BCAF10 /* ISONotesListViewController.xib */; };
+		721AF11C182D724C00BCAF10 /* ISOChapterListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF11E182D724C00BCAF10 /* ISOChapterListViewController.xib */; };
+		721AF11F182D725D00BCAF10 /* ISOProjectNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF121182D725D00BCAF10 /* ISOProjectNotesViewController.xib */; };
+		721AF122182D72A400BCAF10 /* NLVPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721AF124182D72A400BCAF10 /* NLVPopover.xib */; };
+		721F9D12182FD89000374676 /* ProjectEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721F9D11182FD89000374676 /* ProjectEditor.xib */; };
+		721F9D14182FE9B100374676 /* ProjectChapterEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721F9D13182FE9B100374676 /* ProjectChapterEditor.xib */; };
+		721F9D17182FF14800374676 /* ISOBookSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 721F9D16182FF14800374676 /* ISOBookSelector.m */; };
+		721F9D19182FF63B00374676 /* ProjectBookSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721F9D18182FF63B00374676 /* ProjectBookSelector.xib */; };
+		7220F6BF182493FA0019CE5B /* ISOTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7220F6BE182493FA0019CE5B /* ISOTableHeaderView.m */; };
+		72495E0418142C7F00BD9A7E /* ISOBookReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72495E0318142C7F00BD9A7E /* ISOBookReaderViewController.m */; };
+		72495E1018144D1B00BD9A7E /* ISOLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 72495E0F18144D1B00BD9A7E /* ISOLibrary.m */; };
+		725D06E21825366200A3F03C /* ISOBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D06E11825366200A3F03C /* ISOBook.m */; };
+		725D06EA1825588100A3F03C /* ISOBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 725D06E81825588100A3F03C /* ISOBookViewController.m */; };
+		726314331824630A00D66092 /* ISOProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726314311824630A00D66092 /* ISOProjectsViewController.m */; };
+		72631438182468DF00D66092 /* ISOPVChapterCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72631437182468DF00D66092 /* ISOPVChapterCellView.m */; };
+		7263143B1824690000D66092 /* ISOPVBookCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7263143A1824690000D66092 /* ISOPVBookCellView.m */; };
+		727E22401821B8F5008ED488 /* alternative64.png in Resources */ = {isa = PBXBuildFile; fileRef = 727E223C1821B8F5008ED488 /* alternative64.png */; };
+		727E22411821B8F5008ED488 /* night64.png in Resources */ = {isa = PBXBuildFile; fileRef = 727E223D1821B8F5008ED488 /* night64.png */; };
+		727E22421821B8F5008ED488 /* normal64.png in Resources */ = {isa = PBXBuildFile; fileRef = 727E223E1821B8F5008ED488 /* normal64.png */; };
+		727E22431821B8F5008ED488 /* sepia64.png in Resources */ = {isa = PBXBuildFile; fileRef = 727E223F1821B8F5008ED488 /* sepia64.png */; };
+		727E224B1822C966008ED488 /* ISOLibraryListViewCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E224A1822C966008ED488 /* ISOLibraryListViewCV.m */; };
+		727E224E1822CEAA008ED488 /* ISOLibraryListViewRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E224D1822CEAA008ED488 /* ISOLibraryListViewRow.m */; };
+		727E22521823C2E8008ED488 /* ISOWhiteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E22511823C2E8008ED488 /* ISOWhiteView.m */; };
+		727E22591823CF14008ED488 /* ISOColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E22581823CF14008ED488 /* ISOColoredView.m */; };
+		727E225C1823DC66008ED488 /* ISOBookCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E225B1823DC66008ED488 /* ISOBookCoverView.m */; };
+		727E2264182414A2008ED488 /* ISOBookDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 727E2263182414A2008ED488 /* ISOBookDetailsViewController.m */; };
+		727E226718242097008ED488 /* alternatebookimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 727E226618242097008ED488 /* alternatebookimage.png */; };
+		7284B5F0181AD0A900DE6AC9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7284B5EE181AD0A900DE6AC9 /* MainWindow.xib */; };
+		72885810182911E7009B9335 /* ISOProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7288580F182911E7009B9335 /* ISOProjects.m */; };
+		7288581418294B64009B9335 /* increasetextsize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7288581218294B64009B9335 /* increasetextsize.png */; };
+		7288581718294BFA009B9335 /* reducetextsize.png in Resources */ = {isa = PBXBuildFile; fileRef = 7288581618294BFA009B9335 /* reducetextsize.png */; };
+		7288581B182952B8009B9335 /* ISOChapterListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72885819182952B8009B9335 /* ISOChapterListViewController.m */; };
+		72885822182960E6009B9335 /* ISONotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72885820182960E6009B9335 /* ISONotesListViewController.m */; };
+		7288582B18297528009B9335 /* ISOBookThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7288582918297528009B9335 /* ISOBookThemeViewController.m */; };
+		72885836182A7217009B9335 /* ISOProjectNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72885834182A7217009B9335 /* ISOProjectNotesViewController.m */; };
+		7288583A182A7855009B9335 /* ISOSingleNoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72885839182A7855009B9335 /* ISOSingleNoteView.m */; };
+		7288583E182AB29E009B9335 /* ISOSingleNoteRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7288583D182AB29E009B9335 /* ISOSingleNoteRowView.m */; };
+		72A64DAE1811A873007FB026 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A64DAD1811A873007FB026 /* Cocoa.framework */; };
+		72A64DB81811A873007FB026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A64DB61811A873007FB026 /* InfoPlist.strings */; };
+		72A64DBA1811A873007FB026 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DB91811A873007FB026 /* main.m */; };
+		72A64DBE1811A873007FB026 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 72A64DBC1811A873007FB026 /* Credits.rtf */; };
+		72A64DC11811A873007FB026 /* ISOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DC01811A873007FB026 /* ISOAppDelegate.m */; };
+		72A64DC41811A873007FB026 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A64DC21811A873007FB026 /* MainMenu.xib */; };
+		72A64DC61811A873007FB026 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A64DC51811A873007FB026 /* Images.xcassets */; };
+		72A64DCD1811A873007FB026 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A64DCC1811A873007FB026 /* XCTest.framework */; };
+		72A64DCE1811A873007FB026 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A64DAD1811A873007FB026 /* Cocoa.framework */; };
+		72A64DD61811A873007FB026 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72A64DD41811A873007FB026 /* InfoPlist.strings */; };
+		72A64DD81811A873007FB026 /* xBilimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DD71811A873007FB026 /* xBilimTests.m */; };
+		72A64DE71811A900007FB026 /* ISOProjectChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DE61811A900007FB026 /* ISOProjectChapter.m */; };
+		72A64DEA1811A971007FB026 /* ISOSingleNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DE91811A971007FB026 /* ISOSingleNote.m */; };
+		72A64DF11811AAAC007FB026 /* ISOProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A64DF01811AAAC007FB026 /* ISOProject.m */; };
+		72BCD3951811AE62001E4053 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 72BCD38B1811AE62001E4053 /* ioapi.c */; };
+		72BCD3961811AE62001E4053 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 72BCD38D1811AE62001E4053 /* mztools.c */; };
+		72BCD3971811AE62001E4053 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 72BCD38F1811AE62001E4053 /* unzip.c */; };
+		72BCD3981811AE62001E4053 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 72BCD3911811AE62001E4053 /* zip.c */; };
+		72BCD3991811AE62001E4053 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 72BCD3941811AE62001E4053 /* ZipArchive.mm */; };
+		72BCD3D51811E480001E4053 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BCD3D41811E480001E4053 /* libz.dylib */; };
+		72BCD3D71811E488001E4053 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72BCD3D61811E488001E4053 /* WebKit.framework */; };
+		72DAB57C1815CBD500DD485F /* ISOMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DAB57B1815CBD500DD485F /* ISOMainWindowController.m */; };
+		72E327D21826CAC300851712 /* ISOMultiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E327CF1826CAC300851712 /* ISOMultiPageView.m */; };
+		72E327D31826CAC300851712 /* ISOTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E327D11826CAC300851712 /* ISOTextAttachment.m */; };
+		72E327D61826DCF500851712 /* ISOMultiPageClipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E327D51826DCF500851712 /* ISOMultiPageClipView.m */; };
+		72E327D71827143F00851712 /* BookCoverDetailsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327D91827143F00851712 /* BookCoverDetailsWindow.xib */; };
+		72E327DA1827144700851712 /* BookCoverDetailsViewPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327DC1827144700851712 /* BookCoverDetailsViewPopover.xib */; };
+		72E327DD1827145F00851712 /* LibraryCVItemL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327DF1827145F00851712 /* LibraryCVItemL.xib */; };
+		72E327E6182714AB00851712 /* BVLayoutSelectorPopover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327E8182714AB00851712 /* BVLayoutSelectorPopover.xib */; };
+		72E327E9182714B100851712 /* BVLayoutSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327EB182714B100851712 /* BVLayoutSelector.xib */; };
+		72E327EC182714E100851712 /* ProjectsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327EE182714E100851712 /* ProjectsView.xib */; };
+		72E327EF182714EA00851712 /* ISOBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72E327F1182714EA00851712 /* ISOBookViewController.xib */; };
+		72F9C65F1827F1370051EB6B /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C6561827F1370051EB6B /* blue.png */; };
+		72F9C6601827F1370051EB6B /* brown.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C6571827F1370051EB6B /* brown.png */; };
+		72F9C6611827F1370051EB6B /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C6581827F1370051EB6B /* green.png */; };
+		72F9C6621827F1370051EB6B /* navygreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C6591827F1370051EB6B /* navygreen.png */; };
+		72F9C6631827F1370051EB6B /* notag.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C65A1827F1370051EB6B /* notag.png */; };
+		72F9C6641827F1370051EB6B /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C65B1827F1370051EB6B /* pink.png */; };
+		72F9C6651827F1370051EB6B /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C65C1827F1370051EB6B /* red.png */; };
+		72F9C6661827F1370051EB6B /* turquise.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C65D1827F1370051EB6B /* turquise.png */; };
+		72F9C6671827F1370051EB6B /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C65E1827F1370051EB6B /* yellow.png */; };
+		72F9C66D1827F35A0051EB6B /* ISOSingleNoteEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F9C66B1827F35A0051EB6B /* ISOSingleNoteEditController.m */; };
+		72F9C67418283E500051EB6B /* ISONotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F9C67218283E500051EB6B /* ISONotesViewController.m */; };
+		72F9C67718286C1B0051EB6B /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F9C67618286C1B0051EB6B /* edit.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		72A64DCF1811A873007FB026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72A64DA21811A873007FB026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A64DA91811A873007FB026;
+			remoteInfo = xBilim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		720C753F1819637500255D94 /* ISOLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOLibraryViewController.h; path = Library/ISOLibraryViewController.h; sourceTree = "<group>"; };
+		720C75401819637500255D94 /* ISOLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOLibraryViewController.m; path = Library/ISOLibraryViewController.m; sourceTree = "<group>"; };
+		720C754518196D9F00255D94 /* ISOMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOMasterViewController.h; path = Window/ISOMasterViewController.h; sourceTree = SOURCE_ROOT; };
+		720C754618196D9F00255D94 /* ISOMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOMasterViewController.m; path = Window/ISOMasterViewController.m; sourceTree = SOURCE_ROOT; };
+		720C754918197BAC00255D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LibraryView.xib; sourceTree = "<group>"; };
+		720C754F18197C7900255D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookView.xib; sourceTree = "<group>"; };
+		721AF0B0182BD96300BCAF10 /* copycitation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = copycitation.png; sourceTree = "<group>"; };
+		721AF0B2182BE33C00BCAF10 /* paperbookimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paperbookimage.png; sourceTree = "<group>"; };
+		721AF0FA182D353D00BCAF10 /* ISOPaperBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOPaperBookController.h; path = PaperBook/ISOPaperBookController.h; sourceTree = SOURCE_ROOT; };
+		721AF0FB182D353D00BCAF10 /* ISOPaperBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOPaperBookController.m; path = PaperBook/ISOPaperBookController.m; sourceTree = SOURCE_ROOT; };
+		721AF100182D6D4500BCAF10 /* addchapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addchapter.png; sourceTree = "<group>"; };
+		721AF101182D6D4500BCAF10 /* removechapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = removechapter.png; sourceTree = "<group>"; };
+		721AF105182D70DD00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PaperBookEditor.xib; sourceTree = "<group>"; };
+		721AF108182D70F200BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISOSingleNoteEditController.xib; sourceTree = "<group>"; };
+		721AF10B182D70F800BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SNECPopover.xib; sourceTree = "<group>"; };
+		721AF10E182D70FE00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISONotesViewController.xib; sourceTree = "<group>"; };
+		721AF111182D722200BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CLVPopover.xib; sourceTree = "<group>"; };
+		721AF114182D722A00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BTVPopover.xib; sourceTree = "<group>"; };
+		721AF117182D723500BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISOBookThemeViewController.xib; sourceTree = "<group>"; };
+		721AF11A182D723E00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISONotesListViewController.xib; sourceTree = "<group>"; };
+		721AF11D182D724C00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISOChapterListViewController.xib; sourceTree = "<group>"; };
+		721AF120182D725D00BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISOProjectNotesViewController.xib; sourceTree = "<group>"; };
+		721AF123182D72A400BCAF10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/NLVPopover.xib; sourceTree = "<group>"; };
+		721F9D11182FD89000374676 /* ProjectEditor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectEditor.xib; path = ProjectsView/ProjectEditor.xib; sourceTree = SOURCE_ROOT; };
+		721F9D13182FE9B100374676 /* ProjectChapterEditor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectChapterEditor.xib; path = ProjectsView/ProjectChapterEditor.xib; sourceTree = SOURCE_ROOT; };
+		721F9D15182FF14800374676 /* ISOBookSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookSelector.h; path = ProjectsView/ISOBookSelector.h; sourceTree = SOURCE_ROOT; };
+		721F9D16182FF14800374676 /* ISOBookSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookSelector.m; path = ProjectsView/ISOBookSelector.m; sourceTree = SOURCE_ROOT; };
+		721F9D18182FF63B00374676 /* ProjectBookSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProjectBookSelector.xib; path = ProjectsView/ProjectBookSelector.xib; sourceTree = SOURCE_ROOT; };
+		7220F6BD182493FA0019CE5B /* ISOTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOTableHeaderView.h; path = ProjectsView/ISOTableHeaderView.h; sourceTree = SOURCE_ROOT; };
+		7220F6BE182493FA0019CE5B /* ISOTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOTableHeaderView.m; path = ProjectsView/ISOTableHeaderView.m; sourceTree = SOURCE_ROOT; };
+		72495E0218142C7F00BD9A7E /* ISOBookReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookReaderViewController.h; path = BookView/ISOBookReaderViewController.h; sourceTree = SOURCE_ROOT; };
+		72495E0318142C7F00BD9A7E /* ISOBookReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookReaderViewController.m; path = BookView/ISOBookReaderViewController.m; sourceTree = SOURCE_ROOT; };
+		72495E0E18144D1B00BD9A7E /* ISOLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOLibrary.h; path = Library/ISOLibrary.h; sourceTree = "<group>"; };
+		72495E0F18144D1B00BD9A7E /* ISOLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOLibrary.m; path = Library/ISOLibrary.m; sourceTree = "<group>"; };
+		72524EBE18148283002A6865 /* ISOHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISOHeaders.h; sourceTree = "<group>"; };
+		72524EC01814B634002A6865 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		725D06E01825366200A3F03C /* ISOBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBook.h; path = Book/ISOBook.h; sourceTree = "<group>"; };
+		725D06E11825366200A3F03C /* ISOBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBook.m; path = Book/ISOBook.m; sourceTree = "<group>"; };
+		725D06E71825588100A3F03C /* ISOBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookViewController.h; path = SingleBookView/ISOBookViewController.h; sourceTree = SOURCE_ROOT; };
+		725D06E81825588100A3F03C /* ISOBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookViewController.m; path = SingleBookView/ISOBookViewController.m; sourceTree = SOURCE_ROOT; };
+		726314301824630A00D66092 /* ISOProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOProjectsViewController.h; path = ProjectsView/ISOProjectsViewController.h; sourceTree = SOURCE_ROOT; };
+		726314311824630A00D66092 /* ISOProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOProjectsViewController.m; path = ProjectsView/ISOProjectsViewController.m; sourceTree = SOURCE_ROOT; };
+		72631436182468DF00D66092 /* ISOPVChapterCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOPVChapterCellView.h; path = ProjectsView/ISOPVChapterCellView.h; sourceTree = SOURCE_ROOT; };
+		72631437182468DF00D66092 /* ISOPVChapterCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOPVChapterCellView.m; path = ProjectsView/ISOPVChapterCellView.m; sourceTree = SOURCE_ROOT; };
+		726314391824690000D66092 /* ISOPVBookCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOPVBookCellView.h; path = ProjectsView/ISOPVBookCellView.h; sourceTree = SOURCE_ROOT; };
+		7263143A1824690000D66092 /* ISOPVBookCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOPVBookCellView.m; path = ProjectsView/ISOPVBookCellView.m; sourceTree = SOURCE_ROOT; };
+		727E223C1821B8F5008ED488 /* alternative64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternative64.png; sourceTree = "<group>"; };
+		727E223D1821B8F5008ED488 /* night64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night64.png; sourceTree = "<group>"; };
+		727E223E1821B8F5008ED488 /* normal64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = normal64.png; sourceTree = "<group>"; };
+		727E223F1821B8F5008ED488 /* sepia64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sepia64.png; sourceTree = "<group>"; };
+		727E22491822C966008ED488 /* ISOLibraryListViewCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOLibraryListViewCV.h; path = Library/ISOLibraryListViewCV.h; sourceTree = "<group>"; };
+		727E224A1822C966008ED488 /* ISOLibraryListViewCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOLibraryListViewCV.m; path = Library/ISOLibraryListViewCV.m; sourceTree = "<group>"; };
+		727E224C1822CEAA008ED488 /* ISOLibraryListViewRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOLibraryListViewRow.h; path = Library/ISOLibraryListViewRow.h; sourceTree = "<group>"; };
+		727E224D1822CEAA008ED488 /* ISOLibraryListViewRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOLibraryListViewRow.m; path = Library/ISOLibraryListViewRow.m; sourceTree = "<group>"; };
+		727E22501823C2E8008ED488 /* ISOWhiteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOWhiteView.h; path = Generic/ISOWhiteView.h; sourceTree = SOURCE_ROOT; };
+		727E22511823C2E8008ED488 /* ISOWhiteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOWhiteView.m; path = Generic/ISOWhiteView.m; sourceTree = SOURCE_ROOT; };
+		727E22571823CF14008ED488 /* ISOColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOColoredView.h; path = Generic/ISOColoredView.h; sourceTree = SOURCE_ROOT; };
+		727E22581823CF14008ED488 /* ISOColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOColoredView.m; path = Generic/ISOColoredView.m; sourceTree = SOURCE_ROOT; };
+		727E225A1823DC66008ED488 /* ISOBookCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookCoverView.h; path = Generic/ISOBookCoverView.h; sourceTree = SOURCE_ROOT; };
+		727E225B1823DC66008ED488 /* ISOBookCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookCoverView.m; path = Generic/ISOBookCoverView.m; sourceTree = SOURCE_ROOT; };
+		727E2262182414A2008ED488 /* ISOBookDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookDetailsViewController.h; path = Generic/ISOBookDetailsViewController.h; sourceTree = SOURCE_ROOT; };
+		727E2263182414A2008ED488 /* ISOBookDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookDetailsViewController.m; path = Generic/ISOBookDetailsViewController.m; sourceTree = SOURCE_ROOT; };
+		727E226618242097008ED488 /* alternatebookimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternatebookimage.png; sourceTree = "<group>"; };
+		7284B5EF181AD0A900DE6AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		7288580E182911E7009B9335 /* ISOProjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOProjects.h; path = Data/ISOProjects.h; sourceTree = SOURCE_ROOT; };
+		7288580F182911E7009B9335 /* ISOProjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOProjects.m; path = Data/ISOProjects.m; sourceTree = SOURCE_ROOT; };
+		7288581218294B64009B9335 /* increasetextsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increasetextsize.png; sourceTree = "<group>"; };
+		7288581618294BFA009B9335 /* reducetextsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reducetextsize.png; sourceTree = "<group>"; };
+		72885818182952B8009B9335 /* ISOChapterListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOChapterListViewController.h; path = SingleBookView/ISOChapterListViewController.h; sourceTree = SOURCE_ROOT; };
+		72885819182952B8009B9335 /* ISOChapterListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOChapterListViewController.m; path = SingleBookView/ISOChapterListViewController.m; sourceTree = SOURCE_ROOT; };
+		7288581F182960E6009B9335 /* ISONotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISONotesListViewController.h; path = SingleBookView/ISONotesListViewController.h; sourceTree = SOURCE_ROOT; };
+		72885820182960E6009B9335 /* ISONotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISONotesListViewController.m; path = SingleBookView/ISONotesListViewController.m; sourceTree = SOURCE_ROOT; };
+		7288582818297528009B9335 /* ISOBookThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOBookThemeViewController.h; path = SingleBookView/ISOBookThemeViewController.h; sourceTree = SOURCE_ROOT; };
+		7288582918297528009B9335 /* ISOBookThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOBookThemeViewController.m; path = SingleBookView/ISOBookThemeViewController.m; sourceTree = SOURCE_ROOT; };
+		72885833182A7217009B9335 /* ISOProjectNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOProjectNotesViewController.h; path = ProjectsView/ISOProjectNotesViewController.h; sourceTree = SOURCE_ROOT; };
+		72885834182A7217009B9335 /* ISOProjectNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOProjectNotesViewController.m; path = ProjectsView/ISOProjectNotesViewController.m; sourceTree = SOURCE_ROOT; };
+		72885838182A7855009B9335 /* ISOSingleNoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOSingleNoteView.h; path = Data/ISOSingleNoteView.h; sourceTree = SOURCE_ROOT; };
+		72885839182A7855009B9335 /* ISOSingleNoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOSingleNoteView.m; path = Data/ISOSingleNoteView.m; sourceTree = SOURCE_ROOT; };
+		7288583C182AB29E009B9335 /* ISOSingleNoteRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOSingleNoteRowView.h; path = Data/ISOSingleNoteRowView.h; sourceTree = SOURCE_ROOT; };
+		7288583D182AB29E009B9335 /* ISOSingleNoteRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOSingleNoteRowView.m; path = Data/ISOSingleNoteRowView.m; sourceTree = SOURCE_ROOT; };
+		72A64DAA1811A873007FB026 /* Bilim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A64DAD1811A873007FB026 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		72A64DB01811A873007FB026 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		72A64DB11811A873007FB026 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		72A64DB21811A873007FB026 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72A64DB51811A873007FB026 /* xBilim-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xBilim-Info.plist"; sourceTree = "<group>"; };
+		72A64DB71811A873007FB026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72A64DB91811A873007FB026 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		72A64DBB1811A873007FB026 /* xBilim-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xBilim-Prefix.pch"; sourceTree = "<group>"; };
+		72A64DBD1811A873007FB026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		72A64DBF1811A873007FB026 /* ISOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISOAppDelegate.h; sourceTree = "<group>"; };
+		72A64DC01811A873007FB026 /* ISOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISOAppDelegate.m; sourceTree = "<group>"; };
+		72A64DC31811A873007FB026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		72A64DC51811A873007FB026 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		72A64DCB1811A873007FB026 /* xBilimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xBilimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A64DCC1811A873007FB026 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		72A64DD31811A873007FB026 /* xBilimTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xBilimTests-Info.plist"; sourceTree = "<group>"; };
+		72A64DD51811A873007FB026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		72A64DD71811A873007FB026 /* xBilimTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xBilimTests.m; sourceTree = "<group>"; };
+		72A64DE51811A900007FB026 /* ISOProjectChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOProjectChapter.h; path = ../Data/ISOProjectChapter.h; sourceTree = "<group>"; };
+		72A64DE61811A900007FB026 /* ISOProjectChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOProjectChapter.m; path = ../Data/ISOProjectChapter.m; sourceTree = "<group>"; };
+		72A64DE81811A971007FB026 /* ISOSingleNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOSingleNote.h; path = ../Data/ISOSingleNote.h; sourceTree = "<group>"; };
+		72A64DE91811A971007FB026 /* ISOSingleNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOSingleNote.m; path = ../Data/ISOSingleNote.m; sourceTree = "<group>"; };
+		72A64DEF1811AAAC007FB026 /* ISOProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOProject.h; path = ../Data/ISOProject.h; sourceTree = "<group>"; };
+		72A64DF01811AAAC007FB026 /* ISOProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOProject.m; path = ../Data/ISOProject.m; sourceTree = "<group>"; };
+		72BCD38A1811AE62001E4053 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		72BCD38B1811AE62001E4053 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		72BCD38C1811AE62001E4053 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		72BCD38D1811AE62001E4053 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		72BCD38E1811AE62001E4053 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		72BCD38F1811AE62001E4053 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		72BCD3901811AE62001E4053 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		72BCD3911811AE62001E4053 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		72BCD3921811AE62001E4053 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		72BCD3931811AE62001E4053 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		72BCD3941811AE62001E4053 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		72BCD3D41811E480001E4053 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		72BCD3D61811E488001E4053 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		72DAB57A1815CBD500DD485F /* ISOMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISOMainWindowController.h; path = Window/ISOMainWindowController.h; sourceTree = SOURCE_ROOT; };
+		72DAB57B1815CBD500DD485F /* ISOMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISOMainWindowController.m; path = Window/ISOMainWindowController.m; sourceTree = SOURCE_ROOT; };
+		72E327CE1826CAC300851712 /* ISOMultiPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISOMultiPageView.h; sourceTree = "<group>"; };
+		72E327CF1826CAC300851712 /* ISOMultiPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISOMultiPageView.m; sourceTree = "<group>"; };
+		72E327D01826CAC300851712 /* ISOTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISOTextAttachment.h; sourceTree = "<group>"; };
+		72E327D11826CAC300851712 /* ISOTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISOTextAttachment.m; sourceTree = "<group>"; };
+		72E327D41826DCF500851712 /* ISOMultiPageClipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISOMultiPageClipView.h; sourceTree = "<group>"; };
+		72E327D51826DCF500851712 /* ISOMultiPageClipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISOMultiPageClipView.m; sourceTree = "<group>"; };
+		72E327D81827143F00851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookCoverDetailsWindow.xib; sourceTree = "<group>"; };
+		72E327DB1827144700851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BookCoverDetailsViewPopover.xib; sourceTree = "<group>"; };
+		72E327DE1827145F00851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LibraryCVItemL.xib; sourceTree = "<group>"; };
+		72E327E7182714AB00851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BVLayoutSelectorPopover.xib; sourceTree = "<group>"; };
+		72E327EA182714B100851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/BVLayoutSelector.xib; sourceTree = "<group>"; };
+		72E327ED182714E100851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ProjectsView.xib; sourceTree = "<group>"; };
+		72E327F0182714EA00851712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ISOBookViewController.xib; sourceTree = "<group>"; };
+		72F9C6561827F1370051EB6B /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		72F9C6571827F1370051EB6B /* brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brown.png; sourceTree = "<group>"; };
+		72F9C6581827F1370051EB6B /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		72F9C6591827F1370051EB6B /* navygreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navygreen.png; sourceTree = "<group>"; };
+		72F9C65A1827F1370051EB6B /* notag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notag.png; sourceTree = "<group>"; };
+		72F9C65B1827F1370051EB6B /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink.png; sourceTree = "<group>"; };
+		72F9C65C1827F1370051EB6B /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		72F9C65D1827F1370051EB6B /* turquise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turquise.png; sourceTree = "<group>"; };
+		72F9C65E1827F1370051EB6B /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		72F9C66A1827F35A0051EB6B /* ISOSingleNoteEditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISOSingleNoteEditController.h; sourceTree = "<group>"; };
+		72F9C66B1827F35A0051EB6B /* ISOSingleNoteEditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISOSingleNoteEditController.m; sourceTree = "<group>"; };
+		72F9C67118283E500051EB6B /* ISONotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISONotesViewController.h; sourceTree = "<group>"; };
+		72F9C67218283E500051EB6B /* ISONotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISONotesViewController.m; sourceTree = "<group>"; };
+		72F9C67618286C1B0051EB6B /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72A64DA71811A873007FB026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BCD3D71811E488001E4053 /* WebKit.framework in Frameworks */,
+				72BCD3D51811E480001E4053 /* libz.dylib in Frameworks */,
+				72A64DAE1811A873007FB026 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A64DC81811A873007FB026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A64DCE1811A873007FB026 /* Cocoa.framework in Frameworks */,
+				72A64DCD1811A873007FB026 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		721AF0F9182D34F600BCAF10 /* PaperBook */ = {
+			isa = PBXGroup;
+			children = (
+				721AF0FD182D354300BCAF10 /* Resources */,
+				721AF0FA182D353D00BCAF10 /* ISOPaperBookController.h */,
+				721AF0FB182D353D00BCAF10 /* ISOPaperBookController.m */,
+			);
+			name = PaperBook;
+			sourceTree = "<group>";
+		};
+		721AF0FD182D354300BCAF10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				721AF106182D70DD00BCAF10 /* PaperBookEditor.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		72495E0118142C5300BD9A7E /* BookReaderView */ = {
+			isa = PBXGroup;
+			children = (
+				727E22541823CA0A008ED488 /* Resources */,
+				72495E0218142C7F00BD9A7E /* ISOBookReaderViewController.h */,
+				72495E0318142C7F00BD9A7E /* ISOBookReaderViewController.m */,
+			);
+			name = BookReaderView;
+			sourceTree = "<group>";
+		};
+		725D06E61825584700A3F03C /* BookView */ = {
+			isa = PBXGroup;
+			children = (
+				725D06EC1825589300A3F03C /* Resources */,
+				725D06E71825588100A3F03C /* ISOBookViewController.h */,
+				725D06E81825588100A3F03C /* ISOBookViewController.m */,
+				7288582818297528009B9335 /* ISOBookThemeViewController.h */,
+				7288582918297528009B9335 /* ISOBookThemeViewController.m */,
+				72885818182952B8009B9335 /* ISOChapterListViewController.h */,
+				72885819182952B8009B9335 /* ISOChapterListViewController.m */,
+				7288581F182960E6009B9335 /* ISONotesListViewController.h */,
+				72885820182960E6009B9335 /* ISONotesListViewController.m */,
+			);
+			name = BookView;
+			sourceTree = "<group>";
+		};
+		725D06EC1825589300A3F03C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72E327F1182714EA00851712 /* ISOBookViewController.xib */,
+				721AF11E182D724C00BCAF10 /* ISOChapterListViewController.xib */,
+				721AF112182D722200BCAF10 /* CLVPopover.xib */,
+				721AF11B182D723E00BCAF10 /* ISONotesListViewController.xib */,
+				721AF124182D72A400BCAF10 /* NLVPopover.xib */,
+				721AF118182D723500BCAF10 /* ISOBookThemeViewController.xib */,
+				721AF115182D722A00BCAF10 /* BTVPopover.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7263142F182462DB00D66092 /* ProjectsView */ = {
+			isa = PBXGroup;
+			children = (
+				7288583B182A9A1A009B9335 /* Views */,
+				726314351824631600D66092 /* Resources */,
+				726314301824630A00D66092 /* ISOProjectsViewController.h */,
+				726314311824630A00D66092 /* ISOProjectsViewController.m */,
+				721F9D15182FF14800374676 /* ISOBookSelector.h */,
+				721F9D16182FF14800374676 /* ISOBookSelector.m */,
+				7288580E182911E7009B9335 /* ISOProjects.h */,
+				7288580F182911E7009B9335 /* ISOProjects.m */,
+			);
+			name = ProjectsView;
+			sourceTree = "<group>";
+		};
+		726314351824631600D66092 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72E327EE182714E100851712 /* ProjectsView.xib */,
+				721AF121182D725D00BCAF10 /* ISOProjectNotesViewController.xib */,
+				721F9D11182FD89000374676 /* ProjectEditor.xib */,
+				721F9D13182FE9B100374676 /* ProjectChapterEditor.xib */,
+				721F9D18182FF63B00374676 /* ProjectBookSelector.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E223B1821B8F5008ED488 /* ThemeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				727E223C1821B8F5008ED488 /* alternative64.png */,
+				727E223D1821B8F5008ED488 /* night64.png */,
+				727E223E1821B8F5008ED488 /* normal64.png */,
+				727E223F1821B8F5008ED488 /* sepia64.png */,
+			);
+			path = ThemeIcons;
+			sourceTree = "<group>";
+		};
+		727E224F1823C2BA008ED488 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				727E225D18241390008ED488 /* Resources */,
+				72524EBE18148283002A6865 /* ISOHeaders.h */,
+				727E22501823C2E8008ED488 /* ISOWhiteView.h */,
+				727E22511823C2E8008ED488 /* ISOWhiteView.m */,
+				727E22571823CF14008ED488 /* ISOColoredView.h */,
+				727E22581823CF14008ED488 /* ISOColoredView.m */,
+				727E225A1823DC66008ED488 /* ISOBookCoverView.h */,
+				727E225B1823DC66008ED488 /* ISOBookCoverView.m */,
+				727E2262182414A2008ED488 /* ISOBookDetailsViewController.h */,
+				727E2263182414A2008ED488 /* ISOBookDetailsViewController.m */,
+				72A64DBF1811A873007FB026 /* ISOAppDelegate.h */,
+				72A64DC01811A873007FB026 /* ISOAppDelegate.m */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		727E22531823C9E6008ED488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72E327DF1827145F00851712 /* LibraryCVItemL.xib */,
+				720C754818197BAC00255D94 /* LibraryView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E22541823CA0A008ED488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				720C754E18197C7900255D94 /* BookView.xib */,
+				72E327E8182714AB00851712 /* BVLayoutSelectorPopover.xib */,
+				72E327EB182714B100851712 /* BVLayoutSelector.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E22551823CA22008ED488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7284B5EE181AD0A900DE6AC9 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E22561823CA33008ED488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E225D18241390008ED488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72E327D91827143F00851712 /* BookCoverDetailsWindow.xib */,
+				72E327DC1827144700851712 /* BookCoverDetailsViewPopover.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		727E226518242085008ED488 /* Other Images */ = {
+			isa = PBXGroup;
+			children = (
+				721AF0B2182BE33C00BCAF10 /* paperbookimage.png */,
+				72F9C67618286C1B0051EB6B /* edit.png */,
+				727E226618242097008ED488 /* alternatebookimage.png */,
+			);
+			name = "Other Images";
+			sourceTree = "<group>";
+		};
+		7288581118294B64009B9335 /* SmallIcons */ = {
+			isa = PBXGroup;
+			children = (
+				721AF100182D6D4500BCAF10 /* addchapter.png */,
+				721AF101182D6D4500BCAF10 /* removechapter.png */,
+				721AF0B0182BD96300BCAF10 /* copycitation.png */,
+				7288581618294BFA009B9335 /* reducetextsize.png */,
+				7288581218294B64009B9335 /* increasetextsize.png */,
+			);
+			path = SmallIcons;
+			sourceTree = "<group>";
+		};
+		7288583B182A9A1A009B9335 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72885833182A7217009B9335 /* ISOProjectNotesViewController.h */,
+				72885834182A7217009B9335 /* ISOProjectNotesViewController.m */,
+				72631436182468DF00D66092 /* ISOPVChapterCellView.h */,
+				72631437182468DF00D66092 /* ISOPVChapterCellView.m */,
+				726314391824690000D66092 /* ISOPVBookCellView.h */,
+				7263143A1824690000D66092 /* ISOPVBookCellView.m */,
+				7220F6BD182493FA0019CE5B /* ISOTableHeaderView.h */,
+				7220F6BE182493FA0019CE5B /* ISOTableHeaderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		72A64DA11811A873007FB026 = {
+			isa = PBXGroup;
+			children = (
+				72A64DB31811A873007FB026 /* xBilim */,
+				72A64DD11811A873007FB026 /* xBilimTests */,
+				72A64DAC1811A873007FB026 /* Frameworks */,
+				72A64DAB1811A873007FB026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72A64DAB1811A873007FB026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A64DAA1811A873007FB026 /* Bilim.app */,
+				72A64DCB1811A873007FB026 /* xBilimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72A64DAC1811A873007FB026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72BCD3D61811E488001E4053 /* WebKit.framework */,
+				72BCD3D41811E480001E4053 /* libz.dylib */,
+				72A64DAD1811A873007FB026 /* Cocoa.framework */,
+				72A64DCC1811A873007FB026 /* XCTest.framework */,
+				72A64DAF1811A873007FB026 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72A64DAF1811A873007FB026 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72A64DB01811A873007FB026 /* AppKit.framework */,
+				72A64DB11811A873007FB026 /* CoreData.framework */,
+				72A64DB21811A873007FB026 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		72A64DB31811A873007FB026 /* xBilim */ = {
+			isa = PBXGroup;
+			children = (
+				72BCD3881811AE37001E4053 /* F_ZipArchive */,
+				72E327CD1826CAC300851712 /* MultiPageView */,
+				727E224F1823C2BA008ED488 /* Generic */,
+				72A64DF21811AB23007FB026 /* Library */,
+				72495E0118142C5300BD9A7E /* BookReaderView */,
+				72A64DE11811A8B5007FB026 /* Book */,
+				721AF0F9182D34F600BCAF10 /* PaperBook */,
+				72F9C6681827F2FD0051EB6B /* Notes */,
+				72D27DAA1816DCA0007F06B3 /* Projects */,
+				7263142F182462DB00D66092 /* ProjectsView */,
+				725D06E61825584700A3F03C /* BookView */,
+				72DAB5791815CBB200DD485F /* Window */,
+				72A64DC51811A873007FB026 /* Images.xcassets */,
+				72BCD3D01811B7F8001E4053 /* Resources */,
+				72A64DB41811A873007FB026 /* Supporting Files */,
+			);
+			path = xBilim;
+			sourceTree = "<group>";
+		};
+		72A64DB41811A873007FB026 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A64DB51811A873007FB026 /* xBilim-Info.plist */,
+				72A64DB61811A873007FB026 /* InfoPlist.strings */,
+				72A64DB91811A873007FB026 /* main.m */,
+				72A64DBB1811A873007FB026 /* xBilim-Prefix.pch */,
+				72A64DBC1811A873007FB026 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72A64DD11811A873007FB026 /* xBilimTests */ = {
+			isa = PBXGroup;
+			children = (
+				72A64DD71811A873007FB026 /* xBilimTests.m */,
+				72A64DD21811A873007FB026 /* Supporting Files */,
+			);
+			path = xBilimTests;
+			sourceTree = "<group>";
+		};
+		72A64DD21811A873007FB026 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				72A64DD31811A873007FB026 /* xBilimTests-Info.plist */,
+				72A64DD41811A873007FB026 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72A64DE11811A8B5007FB026 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				725D06E01825366200A3F03C /* ISOBook.h */,
+				725D06E11825366200A3F03C /* ISOBook.m */,
+			);
+			name = Book;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		72A64DF21811AB23007FB026 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				727E22531823C9E6008ED488 /* Resources */,
+				72495E0E18144D1B00BD9A7E /* ISOLibrary.h */,
+				72495E0F18144D1B00BD9A7E /* ISOLibrary.m */,
+				720C753F1819637500255D94 /* ISOLibraryViewController.h */,
+				720C75401819637500255D94 /* ISOLibraryViewController.m */,
+				727E22491822C966008ED488 /* ISOLibraryListViewCV.h */,
+				727E224A1822C966008ED488 /* ISOLibraryListViewCV.m */,
+				727E224C1822CEAA008ED488 /* ISOLibraryListViewRow.h */,
+				727E224D1822CEAA008ED488 /* ISOLibraryListViewRow.m */,
+			);
+			name = Library;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		72BCD3881811AE37001E4053 /* F_ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				72BCD3891811AE62001E4053 /* minizip */,
+				72BCD3931811AE62001E4053 /* ZipArchive.h */,
+				72BCD3941811AE62001E4053 /* ZipArchive.mm */,
+			);
+			name = F_ZipArchive;
+			sourceTree = "<group>";
+		};
+		72BCD3891811AE62001E4053 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				72BCD38A1811AE62001E4053 /* crypt.h */,
+				72BCD38B1811AE62001E4053 /* ioapi.c */,
+				72BCD38C1811AE62001E4053 /* ioapi.h */,
+				72BCD38D1811AE62001E4053 /* mztools.c */,
+				72BCD38E1811AE62001E4053 /* mztools.h */,
+				72BCD38F1811AE62001E4053 /* unzip.c */,
+				72BCD3901811AE62001E4053 /* unzip.h */,
+				72BCD3911811AE62001E4053 /* zip.c */,
+				72BCD3921811AE62001E4053 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		72BCD3D01811B7F8001E4053 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7288581118294B64009B9335 /* SmallIcons */,
+				72F9C6551827F1370051EB6B /* TagIcons */,
+				727E226518242085008ED488 /* Other Images */,
+				727E223B1821B8F5008ED488 /* ThemeIcons */,
+				72A64DC21811A873007FB026 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		72D27DAA1816DCA0007F06B3 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				727E22561823CA33008ED488 /* Resources */,
+				72A64DEF1811AAAC007FB026 /* ISOProject.h */,
+				72A64DF01811AAAC007FB026 /* ISOProject.m */,
+				72A64DE51811A900007FB026 /* ISOProjectChapter.h */,
+				72A64DE61811A900007FB026 /* ISOProjectChapter.m */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		72DAB5791815CBB200DD485F /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				727E22551823CA22008ED488 /* Resources */,
+				72DAB57A1815CBD500DD485F /* ISOMainWindowController.h */,
+				72DAB57B1815CBD500DD485F /* ISOMainWindowController.m */,
+				720C754518196D9F00255D94 /* ISOMasterViewController.h */,
+				720C754618196D9F00255D94 /* ISOMasterViewController.m */,
+			);
+			name = Window;
+			sourceTree = "<group>";
+		};
+		72E327CD1826CAC300851712 /* MultiPageView */ = {
+			isa = PBXGroup;
+			children = (
+				72E327CE1826CAC300851712 /* ISOMultiPageView.h */,
+				72E327CF1826CAC300851712 /* ISOMultiPageView.m */,
+				72E327D01826CAC300851712 /* ISOTextAttachment.h */,
+				72E327D11826CAC300851712 /* ISOTextAttachment.m */,
+				72E327D41826DCF500851712 /* ISOMultiPageClipView.h */,
+				72E327D51826DCF500851712 /* ISOMultiPageClipView.m */,
+			);
+			path = MultiPageView;
+			sourceTree = "<group>";
+		};
+		72F9C6551827F1370051EB6B /* TagIcons */ = {
+			isa = PBXGroup;
+			children = (
+				72F9C6561827F1370051EB6B /* blue.png */,
+				72F9C6571827F1370051EB6B /* brown.png */,
+				72F9C6581827F1370051EB6B /* green.png */,
+				72F9C6591827F1370051EB6B /* navygreen.png */,
+				72F9C65A1827F1370051EB6B /* notag.png */,
+				72F9C65B1827F1370051EB6B /* pink.png */,
+				72F9C65C1827F1370051EB6B /* red.png */,
+				72F9C65D1827F1370051EB6B /* turquise.png */,
+				72F9C65E1827F1370051EB6B /* yellow.png */,
+			);
+			path = TagIcons;
+			sourceTree = "<group>";
+		};
+		72F9C6681827F2FD0051EB6B /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				72F9C6691827F3100051EB6B /* Resources */,
+				72F9C66A1827F35A0051EB6B /* ISOSingleNoteEditController.h */,
+				72F9C66B1827F35A0051EB6B /* ISOSingleNoteEditController.m */,
+				72A64DE81811A971007FB026 /* ISOSingleNote.h */,
+				72A64DE91811A971007FB026 /* ISOSingleNote.m */,
+				72F9C67118283E500051EB6B /* ISONotesViewController.h */,
+				72F9C67218283E500051EB6B /* ISONotesViewController.m */,
+				72885838182A7855009B9335 /* ISOSingleNoteView.h */,
+				72885839182A7855009B9335 /* ISOSingleNoteView.m */,
+				7288583C182AB29E009B9335 /* ISOSingleNoteRowView.h */,
+				7288583D182AB29E009B9335 /* ISOSingleNoteRowView.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		72F9C6691827F3100051EB6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				721AF109182D70F200BCAF10 /* ISOSingleNoteEditController.xib */,
+				721AF10C182D70F800BCAF10 /* SNECPopover.xib */,
+				721AF10F182D70FE00BCAF10 /* ISONotesViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72A64DA91811A873007FB026 /* Bilim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A64DDB1811A873007FB026 /* Build configuration list for PBXNativeTarget "Bilim" */;
+			buildPhases = (
+				72A64DA61811A873007FB026 /* Sources */,
+				72A64DA71811A873007FB026 /* Frameworks */,
+				72A64DA81811A873007FB026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bilim;
+			productName = xBilim;
+			productReference = 72A64DAA1811A873007FB026 /* Bilim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		72A64DCA1811A873007FB026 /* xBilimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72A64DDE1811A873007FB026 /* Build configuration list for PBXNativeTarget "xBilimTests" */;
+			buildPhases = (
+				72A64DC71811A873007FB026 /* Sources */,
+				72A64DC81811A873007FB026 /* Frameworks */,
+				72A64DC91811A873007FB026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A64DD01811A873007FB026 /* PBXTargetDependency */,
+			);
+			name = xBilimTests;
+			productName = xBilimTests;
+			productReference = 72A64DCB1811A873007FB026 /* xBilimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72A64DA21811A873007FB026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ISO;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Imdat Solak";
+				TargetAttributes = {
+					72A64DA91811A873007FB026 = {
+						DevelopmentTeam = RVR78FQQ62;
+					};
+					72A64DCA1811A873007FB026 = {
+						TestTargetID = 72A64DA91811A873007FB026;
+					};
+				};
+			};
+			buildConfigurationList = 72A64DA51811A873007FB026 /* Build configuration list for PBXProject "xBilim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72A64DA11811A873007FB026;
+			productRefGroup = 72A64DAB1811A873007FB026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72A64DA91811A873007FB026 /* Bilim */,
+				72A64DCA1811A873007FB026 /* xBilimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72A64DA81811A873007FB026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A64DB81811A873007FB026 /* InfoPlist.strings in Resources */,
+				72F9C6621827F1370051EB6B /* navygreen.png in Resources */,
+				72F9C6641827F1370051EB6B /* pink.png in Resources */,
+				72E327E6182714AB00851712 /* BVLayoutSelectorPopover.xib in Resources */,
+				721AF119182D723E00BCAF10 /* ISONotesListViewController.xib in Resources */,
+				727E22421821B8F5008ED488 /* normal64.png in Resources */,
+				720C755018197C7900255D94 /* BookView.xib in Resources */,
+				72F9C6671827F1370051EB6B /* yellow.png in Resources */,
+				721AF107182D70F200BCAF10 /* ISOSingleNoteEditController.xib in Resources */,
+				7288581418294B64009B9335 /* increasetextsize.png in Resources */,
+				72E327D71827143F00851712 /* BookCoverDetailsWindow.xib in Resources */,
+				72F9C65F1827F1370051EB6B /* blue.png in Resources */,
+				721AF122182D72A400BCAF10 /* NLVPopover.xib in Resources */,
+				721AF110182D722200BCAF10 /* CLVPopover.xib in Resources */,
+				7288581718294BFA009B9335 /* reducetextsize.png in Resources */,
+				721F9D12182FD89000374676 /* ProjectEditor.xib in Resources */,
+				721AF0B3182BE33C00BCAF10 /* paperbookimage.png in Resources */,
+				721AF116182D723500BCAF10 /* ISOBookThemeViewController.xib in Resources */,
+				721AF103182D6D4500BCAF10 /* removechapter.png in Resources */,
+				72F9C6601827F1370051EB6B /* brown.png in Resources */,
+				72E327EF182714EA00851712 /* ISOBookViewController.xib in Resources */,
+				72E327DD1827145F00851712 /* LibraryCVItemL.xib in Resources */,
+				721AF113182D722A00BCAF10 /* BTVPopover.xib in Resources */,
+				721AF102182D6D4500BCAF10 /* addchapter.png in Resources */,
+				72E327E9182714B100851712 /* BVLayoutSelector.xib in Resources */,
+				72E327EC182714E100851712 /* ProjectsView.xib in Resources */,
+				727E226718242097008ED488 /* alternatebookimage.png in Resources */,
+				721AF11F182D725D00BCAF10 /* ISOProjectNotesViewController.xib in Resources */,
+				727E22401821B8F5008ED488 /* alternative64.png in Resources */,
+				72A64DC61811A873007FB026 /* Images.xcassets in Resources */,
+				721F9D14182FE9B100374676 /* ProjectChapterEditor.xib in Resources */,
+				721AF10A182D70F800BCAF10 /* SNECPopover.xib in Resources */,
+				72F9C6631827F1370051EB6B /* notag.png in Resources */,
+				721AF11C182D724C00BCAF10 /* ISOChapterListViewController.xib in Resources */,
+				72E327DA1827144700851712 /* BookCoverDetailsViewPopover.xib in Resources */,
+				7284B5F0181AD0A900DE6AC9 /* MainWindow.xib in Resources */,
+				721AF0B1182BD96300BCAF10 /* copycitation.png in Resources */,
+				721AF10D182D70FE00BCAF10 /* ISONotesViewController.xib in Resources */,
+				72F9C6661827F1370051EB6B /* turquise.png in Resources */,
+				727E22431821B8F5008ED488 /* sepia64.png in Resources */,
+				727E22411821B8F5008ED488 /* night64.png in Resources */,
+				720C754A18197BAC00255D94 /* LibraryView.xib in Resources */,
+				721F9D19182FF63B00374676 /* ProjectBookSelector.xib in Resources */,
+				72F9C67718286C1B0051EB6B /* edit.png in Resources */,
+				72F9C6611827F1370051EB6B /* green.png in Resources */,
+				72F9C6651827F1370051EB6B /* red.png in Resources */,
+				72A64DBE1811A873007FB026 /* Credits.rtf in Resources */,
+				721AF104182D70DD00BCAF10 /* PaperBookEditor.xib in Resources */,
+				72A64DC41811A873007FB026 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A64DC91811A873007FB026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A64DD61811A873007FB026 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72A64DA61811A873007FB026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DAB57C1815CBD500DD485F /* ISOMainWindowController.m in Sources */,
+				72885810182911E7009B9335 /* ISOProjects.m in Sources */,
+				7288583A182A7855009B9335 /* ISOSingleNoteView.m in Sources */,
+				72E327D21826CAC300851712 /* ISOMultiPageView.m in Sources */,
+				72BCD3981811AE62001E4053 /* zip.c in Sources */,
+				720C75411819637500255D94 /* ISOLibraryViewController.m in Sources */,
+				72A64DC11811A873007FB026 /* ISOAppDelegate.m in Sources */,
+				72A64DF11811AAAC007FB026 /* ISOProject.m in Sources */,
+				7288582B18297528009B9335 /* ISOBookThemeViewController.m in Sources */,
+				72F9C67418283E500051EB6B /* ISONotesViewController.m in Sources */,
+				72BCD3961811AE62001E4053 /* mztools.c in Sources */,
+				725D06E21825366200A3F03C /* ISOBook.m in Sources */,
+				72BCD3951811AE62001E4053 /* ioapi.c in Sources */,
+				72495E1018144D1B00BD9A7E /* ISOLibrary.m in Sources */,
+				72A64DEA1811A971007FB026 /* ISOSingleNote.m in Sources */,
+				721F9D17182FF14800374676 /* ISOBookSelector.m in Sources */,
+				727E2264182414A2008ED488 /* ISOBookDetailsViewController.m in Sources */,
+				7220F6BF182493FA0019CE5B /* ISOTableHeaderView.m in Sources */,
+				72495E0418142C7F00BD9A7E /* ISOBookReaderViewController.m in Sources */,
+				7263143B1824690000D66092 /* ISOPVBookCellView.m in Sources */,
+				727E224E1822CEAA008ED488 /* ISOLibraryListViewRow.m in Sources */,
+				72BCD3971811AE62001E4053 /* unzip.c in Sources */,
+				726314331824630A00D66092 /* ISOProjectsViewController.m in Sources */,
+				72885836182A7217009B9335 /* ISOProjectNotesViewController.m in Sources */,
+				7288583E182AB29E009B9335 /* ISOSingleNoteRowView.m in Sources */,
+				72E327D31826CAC300851712 /* ISOTextAttachment.m in Sources */,
+				72A64DBA1811A873007FB026 /* main.m in Sources */,
+				727E22521823C2E8008ED488 /* ISOWhiteView.m in Sources */,
+				725D06EA1825588100A3F03C /* ISOBookViewController.m in Sources */,
+				727E224B1822C966008ED488 /* ISOLibraryListViewCV.m in Sources */,
+				721AF0FC182D353D00BCAF10 /* ISOPaperBookController.m in Sources */,
+				72F9C66D1827F35A0051EB6B /* ISOSingleNoteEditController.m in Sources */,
+				72631438182468DF00D66092 /* ISOPVChapterCellView.m in Sources */,
+				727E22591823CF14008ED488 /* ISOColoredView.m in Sources */,
+				727E225C1823DC66008ED488 /* ISOBookCoverView.m in Sources */,
+				72885822182960E6009B9335 /* ISONotesListViewController.m in Sources */,
+				72E327D61826DCF500851712 /* ISOMultiPageClipView.m in Sources */,
+				720C754718196D9F00255D94 /* ISOMasterViewController.m in Sources */,
+				72BCD3991811AE62001E4053 /* ZipArchive.mm in Sources */,
+				7288581B182952B8009B9335 /* ISOChapterListViewController.m in Sources */,
+				72A64DE71811A900007FB026 /* ISOProjectChapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A64DC71811A873007FB026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A64DD81811A873007FB026 /* xBilimTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72A64DD01811A873007FB026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72A64DA91811A873007FB026 /* Bilim */;
+			targetProxy = 72A64DCF1811A873007FB026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		720C754818197BAC00255D94 /* LibraryView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720C754918197BAC00255D94 /* Base */,
+			);
+			name = LibraryView.xib;
+			path = xBilim;
+			sourceTree = "<group>";
+		};
+		720C754E18197C7900255D94 /* BookView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720C754F18197C7900255D94 /* Base */,
+			);
+			name = BookView.xib;
+			sourceTree = "<group>";
+		};
+		721AF106182D70DD00BCAF10 /* PaperBookEditor.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF105182D70DD00BCAF10 /* Base */,
+			);
+			name = PaperBookEditor.xib;
+			path = PaperBook;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF109182D70F200BCAF10 /* ISOSingleNoteEditController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF108182D70F200BCAF10 /* Base */,
+			);
+			name = ISOSingleNoteEditController.xib;
+			sourceTree = "<group>";
+		};
+		721AF10C182D70F800BCAF10 /* SNECPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF10B182D70F800BCAF10 /* Base */,
+			);
+			name = SNECPopover.xib;
+			sourceTree = "<group>";
+		};
+		721AF10F182D70FE00BCAF10 /* ISONotesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF10E182D70FE00BCAF10 /* Base */,
+			);
+			name = ISONotesViewController.xib;
+			sourceTree = "<group>";
+		};
+		721AF112182D722200BCAF10 /* CLVPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF111182D722200BCAF10 /* Base */,
+			);
+			name = CLVPopover.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF115182D722A00BCAF10 /* BTVPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF114182D722A00BCAF10 /* Base */,
+			);
+			name = BTVPopover.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF118182D723500BCAF10 /* ISOBookThemeViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF117182D723500BCAF10 /* Base */,
+			);
+			name = ISOBookThemeViewController.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF11B182D723E00BCAF10 /* ISONotesListViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF11A182D723E00BCAF10 /* Base */,
+			);
+			name = ISONotesListViewController.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF11E182D724C00BCAF10 /* ISOChapterListViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF11D182D724C00BCAF10 /* Base */,
+			);
+			name = ISOChapterListViewController.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF121182D725D00BCAF10 /* ISOProjectNotesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF120182D725D00BCAF10 /* Base */,
+			);
+			name = ISOProjectNotesViewController.xib;
+			path = ProjectsView;
+			sourceTree = SOURCE_ROOT;
+		};
+		721AF124182D72A400BCAF10 /* NLVPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				721AF123182D72A400BCAF10 /* Base */,
+			);
+			name = NLVPopover.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+		7284B5EE181AD0A900DE6AC9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7284B5EF181AD0A900DE6AC9 /* Base */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		72A64DB61811A873007FB026 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A64DB71811A873007FB026 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72A64DBC1811A873007FB026 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A64DBD1811A873007FB026 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		72A64DC21811A873007FB026 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A64DC31811A873007FB026 /* Base */,
+				72524EC01814B634002A6865 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		72A64DD41811A873007FB026 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72A64DD51811A873007FB026 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		72E327D91827143F00851712 /* BookCoverDetailsWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327D81827143F00851712 /* Base */,
+			);
+			name = BookCoverDetailsWindow.xib;
+			sourceTree = "<group>";
+		};
+		72E327DC1827144700851712 /* BookCoverDetailsViewPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327DB1827144700851712 /* Base */,
+			);
+			name = BookCoverDetailsViewPopover.xib;
+			sourceTree = "<group>";
+		};
+		72E327DF1827145F00851712 /* LibraryCVItemL.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327DE1827145F00851712 /* Base */,
+			);
+			name = LibraryCVItemL.xib;
+			path = xBilim;
+			sourceTree = "<group>";
+		};
+		72E327E8182714AB00851712 /* BVLayoutSelectorPopover.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327E7182714AB00851712 /* Base */,
+			);
+			name = BVLayoutSelectorPopover.xib;
+			sourceTree = "<group>";
+		};
+		72E327EB182714B100851712 /* BVLayoutSelector.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327EA182714B100851712 /* Base */,
+			);
+			name = BVLayoutSelector.xib;
+			sourceTree = "<group>";
+		};
+		72E327EE182714E100851712 /* ProjectsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327ED182714E100851712 /* Base */,
+			);
+			name = ProjectsView.xib;
+			path = ProjectsView;
+			sourceTree = SOURCE_ROOT;
+		};
+		72E327F1182714EA00851712 /* ISOBookViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72E327F0182714EA00851712 /* Base */,
+			);
+			name = ISOBookViewController.xib;
+			path = SingleBookView;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72A64DD91811A873007FB026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		72A64DDA1811A873007FB026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		72A64DDC1811A873007FB026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xBilim/xBilim-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "xBilim/xBilim-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.solak.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		72A64DDD1811A873007FB026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xBilim/xBilim-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "xBilim/xBilim-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.solak.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		72A64DDF1811A873007FB026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xBilim.app/Contents/MacOS/xBilim";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xBilim/xBilim-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "xBilimTests/xBilimTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.solak.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		72A64DE01811A873007FB026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/xBilim.app/Contents/MacOS/xBilim";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xBilim/xBilim-Prefix.pch";
+				INFOPLIST_FILE = "xBilimTests/xBilimTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.solak.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72A64DA51811A873007FB026 /* Build configuration list for PBXProject "xBilim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A64DD91811A873007FB026 /* Debug */,
+				72A64DDA1811A873007FB026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A64DDB1811A873007FB026 /* Build configuration list for PBXNativeTarget "Bilim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A64DDC1811A873007FB026 /* Debug */,
+				72A64DDD1811A873007FB026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72A64DDE1811A873007FB026 /* Build configuration list for PBXNativeTarget "xBilimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72A64DDF1811A873007FB026 /* Debug */,
+				72A64DE01811A873007FB026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72A64DA21811A873007FB026 /* Project object */;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4511" systemVersion="13A598" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1090" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4511"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ISOMainWindowController">
+            <connections>
+                <outlet property="window" destination="371" id="8dO-V1-qxS"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="Bilim" allowsToolTipsWhenApplicationIsInactive="NO" restorable="NO" deferred="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" appearanceType="aqua" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" resizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="101" y="246" width="671" height="463"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1366" height="768"/>
+            <value key="minSize" type="size" width="609" height="591"/>
+            <view key="contentView" wantsLayer="YES" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="671" height="463"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <animations>
+                    <caTransition key="subviews">
+                        <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGJSZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKkHCBES
+ExkLGiBVJG51bGzUCQoLDA0ODxBWJGNsYXNzW2VuZFByb2dyZXNzVHR5cGVfEBJfX0NBQ29kaW5nQ29u
+dGVudHOACIACgAOABCI/gAAAVGZhZGXSFAkVGFpOUy5vYmplY3RzohYXgAWABoAHW2VuZFByb2dyZXNz
+0hscHR5aJGNsYXNzbmFtZVgkY2xhc3Nlc1dOU0FycmF5oh0fWE5TT2JqZWN00hscISJcQ0FUcmFuc2l0
+aW9uoyMkH1xDQVRyYW5zaXRpb25bQ0FBbmltYXRpb25fEA9OU0tleWVkQXJjaGl2ZXLRJyhUcm9vdIAB
+AAgAEQAaACMALQAyADcAQQBHAFAAVwBjAGgAfQB/AIEAgwCFAIoAjwCUAJ8AogCkAKYAqAC0ALkAxADN
+ANUA2ADhAOYA8wD3AQQBEAEiASUBKgAAAAAAAAIBAAAAAAAAACkAAAAAAAAAAAAAAAAAAAEsA
+</mutableData>
+                    </caTransition>
+                </animations>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="mbJ-oG-0Pd"/>
+            </connections>
+        </window>
+        <customObject id="420" customClass="NSFontManager"/>
+    </objects>
+</document>

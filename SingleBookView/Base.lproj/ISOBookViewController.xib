@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1070" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ISOBookViewController">
+            <connections>
+                <outlet property="bookTitleField" destination="O3P-Kb-VLF" id="wJ7-XK-ZN9"/>
+                <outlet property="chaptersButton" destination="Zua-ZW-7Uf" id="VEt-Mm-Kjp"/>
+                <outlet property="clipView" destination="tUZ-P9-lyg" id="Fal-m2-oze"/>
+                <outlet property="nextPageButton" destination="GGd-LR-zZO" id="ZzR-Vk-ZC6"/>
+                <outlet property="pagesTextField" destination="DOC-Qr-tSv" id="IUX-EB-tgI"/>
+                <outlet property="prevPageButton" destination="d0b-hO-ANn" id="oZZ-pi-MVl"/>
+                <outlet property="progressIndicator" destination="E2G-HO-WEh" id="RNA-An-QlG"/>
+                <outlet property="scrollView" destination="tUZ-P9-lyg" id="ApC-rp-9C3"/>
+                <outlet property="textMenu" destination="Fcp-6c-CpK" id="BSu-FW-HHa"/>
+                <outlet property="view" destination="1" id="9fb-Wf-acS"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1" customClass="ISOWhiteView">
+            <rect key="frame" x="0.0" y="0.0" width="743" height="471"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O3P-Kb-VLF">
+                    <rect key="frame" x="212" y="446" width="320" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="IfU-oH-VRO"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Book Title" id="Bbu-Fq-Rec">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DOC-Qr-tSv">
+                    <rect key="frame" x="598" y="7" width="70" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="2mC-H9-ZCd"/>
+                        <constraint firstAttribute="width" constant="66" id="XqQ-CZ-sGU"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="1/2" id="Jyp-ni-bVi">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GGd-LR-zZO">
+                    <rect key="frame" x="682" y="6" width="41" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="W7R-iI-Ajt"/>
+                        <constraint firstAttribute="height" constant="18" id="dC5-Qt-RaS"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" image="NSGoRightTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uld-2b-VWC">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="nextPageButtonClicked:" target="-2" id="Nyr-BT-F8Q"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-ZW-7Uf">
+                    <rect key="frame" x="20" y="444" width="41" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="A6Z-Yg-ulu"/>
+                        <constraint firstAttribute="width" constant="41" id="Cxi-gT-16f"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" image="NSListViewTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rns-sU-4hx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="chaptersButtonClicked:" target="-2" id="9zq-wc-vCf"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fG2-Dh-nsW">
+                    <rect key="frame" x="69" y="444" width="41" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="sxX-xn-gNZ"/>
+                        <constraint firstAttribute="height" constant="18" id="tpg-h0-lVB"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" image="NSBookmarksTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="YFt-0V-eww">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="notesButtonClicked:" target="-2" id="YWs-oF-kI0"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lEc-93-9Ar">
+                    <rect key="frame" x="600" y="444" width="41" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="Gfn-ac-NwN"/>
+                        <constraint firstAttribute="height" constant="18" id="IGU-Hv-sta"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" image="NSActionTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n2d-Iu-diD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="themesButtonClicked:" target="-2" id="PAq-iH-bAC"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="d0b-hO-ANn">
+                    <rect key="frame" x="20" y="6" width="41" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Qh8-9R-YDz"/>
+                        <constraint firstAttribute="width" constant="41" id="sDs-Cn-38g"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundRect" title="Round Rect Button" bezelStyle="roundedRect" image="NSGoLeftTemplate" imagePosition="only" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvV-Ee-zQX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="prevPageButtonClicked:" target="-2" id="Zgx-35-CVb"/>
+                    </connections>
+                </button>
+                <levelIndicator verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E2G-HO-WEh">
+                    <rect key="frame" x="235" y="8" width="274" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="274" id="aaj-N4-1sI"/>
+                        <constraint firstAttribute="height" constant="16" id="hs4-rk-NZ4"/>
+                    </constraints>
+                    <levelIndicatorCell key="cell" alignment="left" doubleValue="100" maxValue="100" numberOfTickMarks="5" tickMarkPosition="above" levelIndicatorStyle="relevancy" id="Hk2-I5-ID7"/>
+                </levelIndicator>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-P9-lyg" customClass="ISOMultiPageClipView">
+                    <rect key="frame" x="20" y="37" width="703" height="396"/>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="93v-Wt-0ji"/>
+                    </connections>
+                </customView>
+                <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dJA-gd-CVP">
+                    <rect key="frame" x="649" y="444" width="75" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="Drt-L2-zZf"/>
+                        <constraint firstAttribute="height" constant="18" id="Jec-8I-cw5"/>
+                    </constraints>
+                    <segmentedCell key="cell" borderStyle="border" alignment="left" style="roundRect" trackingMode="momentary" id="iFX-i9-87O">
+                        <font key="font" metaFont="cellTitle"/>
+                        <segments>
+                            <segment image="reducetextsize">
+                                <nil key="label"/>
+                            </segment>
+                            <segment image="increasetextsize" tag="1">
+                                <nil key="label"/>
+                            </segment>
+                        </segments>
+                    </segmentedCell>
+                </segmentedControl>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="E2G-HO-WEh" secondAttribute="bottom" constant="8" id="0wO-47-2EO"/>
+                <constraint firstAttribute="centerX" secondItem="E2G-HO-WEh" secondAttribute="centerX" id="33E-nV-wvN"/>
+                <constraint firstItem="GGd-LR-zZO" firstAttribute="leading" secondItem="DOC-Qr-tSv" secondAttribute="trailing" constant="16" id="3FO-3Y-kzA"/>
+                <constraint firstItem="fG2-Dh-nsW" firstAttribute="leading" secondItem="Zua-ZW-7Uf" secondAttribute="trailing" constant="8" id="5MR-rw-c8t"/>
+                <constraint firstItem="dJA-gd-CVP" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="6GE-QQ-2y9"/>
+                <constraint firstItem="dJA-gd-CVP" firstAttribute="leading" secondItem="lEc-93-9Ar" secondAttribute="trailing" constant="9" id="JdV-yz-bpC"/>
+                <constraint firstAttribute="trailing" secondItem="tUZ-P9-lyg" secondAttribute="trailing" constant="20" id="Laa-53-UKc"/>
+                <constraint firstItem="Zua-ZW-7Uf" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="Oys-13-ym3"/>
+                <constraint firstItem="tUZ-P9-lyg" firstAttribute="top" secondItem="dJA-gd-CVP" secondAttribute="bottom" constant="12" id="P5f-6D-MQ0"/>
+                <constraint firstAttribute="bottom" secondItem="DOC-Qr-tSv" secondAttribute="bottom" constant="7" id="Qm0-ib-CbF"/>
+                <constraint firstItem="lEc-93-9Ar" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="RhQ-Yj-47c"/>
+                <constraint firstItem="Zua-ZW-7Uf" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="XVo-r9-JIF"/>
+                <constraint firstItem="d0b-hO-ANn" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Y9r-OO-ZDp"/>
+                <constraint firstAttribute="trailing" secondItem="GGd-LR-zZO" secondAttribute="trailing" constant="20" id="bMj-nh-bn6"/>
+                <constraint firstItem="O3P-Kb-VLF" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="e5q-fe-1X9"/>
+                <constraint firstItem="GGd-LR-zZO" firstAttribute="leading" secondItem="DOC-Qr-tSv" secondAttribute="trailing" constant="16" id="eHd-fy-TyY"/>
+                <constraint firstItem="tUZ-P9-lyg" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="hqa-CD-r8G"/>
+                <constraint firstItem="d0b-hO-ANn" firstAttribute="top" secondItem="tUZ-P9-lyg" secondAttribute="bottom" constant="12" id="ir5-39-jqw"/>
+                <constraint firstAttribute="bottom" secondItem="GGd-LR-zZO" secondAttribute="bottom" constant="7" id="oo5-bt-Q4g"/>
+                <constraint firstItem="fG2-Dh-nsW" firstAttribute="top" secondItem="1" secondAttribute="top" constant="8" id="rJ0-E1-HzA"/>
+                <constraint firstAttribute="bottom" secondItem="d0b-hO-ANn" secondAttribute="bottom" constant="7" id="rhr-U7-6c5"/>
+                <constraint firstAttribute="trailing" secondItem="dJA-gd-CVP" secondAttribute="trailing" constant="20" id="v9f-21-akV"/>
+                <constraint firstAttribute="centerX" secondItem="O3P-Kb-VLF" secondAttribute="centerX" id="yHs-IZ-qA4"/>
+            </constraints>
+        </customView>
+        <menu id="Fcp-6c-CpK">
+            <items>
+                <menuItem title="Copy as Citation" id="TMm-cC-tzn">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="chaptersButtonClicked:" target="-2" id="GgR-jw-Jz5"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Add Note..." id="qKq-r4-PEJ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="nextPageButtonClicked:" target="-2" id="OTk-jg-aDX"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Mark" id="kMI-hx-L2W">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Mark" id="Tjw-lE-jOa">
+                        <items>
+                            <menuItem title="Tag 1" id="39i-2z-qgI">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="prevPageButtonClicked:" target="-2" id="j0X-qb-Y7Q"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tag 2" image="NSInfo" id="zPl-NT-I3l">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Tag 3" id="OG9-0f-wZw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSBookmarksTemplate" width="17" height="18"/>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSInfo" width="32" height="32"/>
+        <image name="NSListViewTemplate" width="14" height="10"/>
+        <image name="increasetextsize" width="20" height="20"/>
+        <image name="reducetextsize" width="20" height="20"/>
+    </resources>
+</document>
